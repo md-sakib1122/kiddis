@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/style.css"> 
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar flex">
+            <div class="logo flex">
+                <img src="/assets/logo.png" alt="">
+                <h2 class="font-1 text-32 weight-700">SCHOOL</h2>
+             </div>
+             <ul class="links flex">
+               <li><a class="font-1 text-20 weight-700 orange" href="#">Home</a></li>
+               <li><a class="font-1 text-20 weight-700 sky-blue"  href="#">About</a></li>
+               <li><a class="font-1 text-20 weight-700 blue-shade"  href="#">Facilities</a></li>
+               <li><a class="font-1 text-20 weight-700 green-shade"  href="#">Admission</a></li>
+             </ul>
+             <button class="btn bg-orange text-20  white">Contact</button>
+             <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+             </div>
+        </nav>
+        
+        <section class=" hero flex ">
+            <div>
+                <h1 class="text-56 weight-700 font-1">
+                    <span class="orange">Empowering</span> <br> students from small <br> age <span class="skyblue">towards vision</span>
+                </h1>
+                <p class=" mt-2 text-20 weight-400 font-1 light-dirk">
+                    With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World.
+                </p>
+                <button class=" mt-1 btn bg-black white text-20">Enroll Now</button>
+            </div>
+
+            <div class="img-container">
+                 <img src="assets/hero-kids.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="curriculum mt-3">
+          
+                <h2></h2>
+                <div class="cart-container ">
+                     <div class="cart cart-1">
+                        <img src="assets/kinder.png" alt="">
+                        <h4 class=" mt-1 text-24 font-1 weight-700  semi-dirk">Kinder (3-6) Years</h4>
+                        <p class="hight-1 mt-1 font-2 light-dirk text-15"> Through teamwork and learning together,
+                           great friendships blossom, and knowledge
+                           is nurtured each day in classrooms anew</p>
+                        <h5 class="font-1 text-15 weight-700 skyblue mt-1">Read More</h5>
+                     </div>
+   
+                     <div class="cart cart-2">
+                       <img class="" src="/assets/elementary.png" alt="">
+                       <h4 class="mt-1 text-24 font-1 weight-700  semi-dirk">Elementary School</h4>
+                       <p class="hight-1 mt-1 font-2 light-dirk text-15">
+                           Books, pencils, and endless dreams fill the
+                           halls of learning, shaping bright futures
+                           with guidance, effort, and creativity</p>
+                       <h5 class="font-1 text-15 weight-700 orange mt-1 ">Read More</h5>
+                    </div>
+   
+                    <div class="cart cart-3">
+                       <img src="/assets/middle.png" alt="">
+                       <h4 class="mt-1 text-24 font-1 weight-700  semi-dirk">Middle (10-16) Years</h4>
+                       <p class="hight-1 mt-1 font-2 light-dirk text-15">
+                           Teachers inspire and students explore,
+                           growing minds with lessons of wisdom,
+                           curiosity, and the joy of discovery.
+                       </p>
+                       <h5 class="font-1 text-15 weight-700 green-shade mt-1">Read More</h5>
+                    </div>
+   
+                </div>
+                <div>
+                   <button class="btn-round"><i class="fa-solid fa-less-than"></i></button>
+                   <button class="btn-round"><i class="fa-solid fa-greater-than"></i></button>
+                </div>  
+        </section>
+    </main>
 </body>
 </html>
