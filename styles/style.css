@@ -51,9 +51,25 @@ header .navbar{
 
 
 /* curriculum" section */
-.curriculum-container{
-   
-    
+.curriculum{
+    background-image: url("../assets/bg.png");
+    background-position: top center ;
+    position: relative;
+}
+
+.curriculum::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    z-index: -1; /* Keep it behind the main content */
 }
 .curriculum .cart-container{
     max-width: 1160px;
@@ -70,6 +86,134 @@ header .navbar{
     text-align: center;
 }
 
+.curriculum .cart{
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border-radius: 18.86px;
+    padding: 18px 25px;
+}
+
+.curriculum .cart-1{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum .cart-2{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum .cart-3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum .btn-container{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.curriculum .btn-container button{
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 100%;
+    
+}
+
+/* sdjifhosad */
+
+
+.stories{
+    background-image: url("../assets/bg.png"), url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
+    background-position: top center ;
+    position: relative;
+}
+.stories .story-container{
+    display: flex;
+    max-width: 1160px;
+    margin: auto;
+    column-gap: 20px;
+}
+
+.stories::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    z-index: -1; /* Keep it behind the main content */
+}
+
+.stories .right{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.stories .left img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+   
+}
+
+.stories .left{
+    flex: 0.8;
+    border-radius: 16px;
+    border-radius: 16px;
+    background-color: white;
+}
+.stories .left .description{
+    padding: 20px;
+    position: relative;
+}
+
+.stories .left button{
+    position: absolute;
+    top: -3px;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.stories .cart{
+    border-radius: 16px;
+     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.stories .cart img{
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
+.stories .right  .description{
+     position: relative;
+     padding: 30px 20px;
+     height: 100%;
+}
+
+.stories .cart button{
+    position: absolute;
+    top: -3px;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: auto;
+    height: 400px;
+}
 
 
 
@@ -111,5 +255,31 @@ header .navbar{
     .hero .img-container img{
         width:  100%;
      }
+     /* cart section */
+     .curriculum .cart-container{
+        grid-template-columns: repeat(1,1fr);
+        padding: 6px 20px;
+        row-gap: 20px;
+     }
+
+     .curriculum .curriculum-header{
+        font-size: 26px;
+        margin-bottom: -40px;
+        margin-top: 70px;
+     }
+     .curriculum .btn-container{
+        display: none;
+     }
+     /* storis */
+     .stories{
+        padding: 6px 20px;
+        row-gap: 20px;
+     }
+     .stories .left{
+        display: none;
+     }
+    .stories .right button, .cart p{
+        font-size: 9.8px;
+    }
 
 }
