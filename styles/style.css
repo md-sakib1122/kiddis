@@ -208,13 +208,22 @@ header .navbar{
 /* footer */
 
 .footer-container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     max-width: 1160px;
     margin: auto;
-    height: 400px;
+    min-height: 400px;
+  
 }
 
+.footer-container .no-2{
+    flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+
+.footer-container .no-3{
+    flex: 1;  display: flex; flex-direction: column; align-items: end; justify-content: center;
+    text-align: center;
+}
 
 
 @media screen  and (max-width:570px){
@@ -281,5 +290,22 @@ header .navbar{
     .stories .right button, .cart p{
         font-size: 9.8px;
     }
+ /* footer */
+ footer{
+    padding: 16px 20px;
+ }
+ .footer-container{
+    grid-template-columns: 1fr;
+ } 
 
+  footer .footer-container .no-2{
+      align-items: start;
+      margin-top: 20px;
+ }
+
+ .footer-container .no-3{
+    align-items: start;
+     margin-top: 27px;
+     text-align: start;
+ }
 }
